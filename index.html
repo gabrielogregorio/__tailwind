@@ -4,10 +4,68 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
+  <style type="text/tailwindcss">
+    @layer components {
+      .btn {
+        @apply font-bold py-2 px-2 rounded;
+      }
+      .btn-blue {
+        @apply bg-blue-400 text-white;
+      }
+      .btn-blue:hover {
+        @apply hover:bg-blue-600;
+      }
+
+      .btn-green {
+        @apply bg-green-400 text-white;
+      }
+      .btn-green:hover {
+        @apply hover:bg-green-600;
+      }
+
+    }
+    @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+      }
+    }
+  </style>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
 </head>
 <body>
   <h1 class="text-3xl font-bold underline hover:bg-red-500">
     Hello world!
   </h1>
+
+  <button class="btn btn-blue">My button</button>y
+  <button class="btn btn-green">My button</button>y
+
+  <h2>Mobile first</h2>
+  <p>sm: small, md: medium, lg: large, xl: extra-large</p>
+  <div class="w-full flex justify-center">
+    <div class="w-full sm:max-w-sm h-10 md:max-w-md bg-blue-300 md:bg-red-300">
+    <h3>Container</h3>
+    </div>
+  </div>
+
+  <div>
+    <div class="container mx-auto bg-teal-300 md:bg-blue-300">
+      <h3>Container do tailwind</h3>
+      </div>
+  </div>
+
+  <input type="text" placeholder="hello" class="bg-gray-100 text-gray-800 focus:bg-gray-200 py-2 px-4 border focus:border-gray-500 outline-none">
+
+
 </body>
 </html>
