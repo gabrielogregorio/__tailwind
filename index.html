@@ -43,7 +43,7 @@
   </script>
 </head>
 <body>
-  <h1 class="text-3xl font-bold underline hover:bg-red-500">
+  <h1 class="text-3xl font-bold underline">
     Hello world!
   </h1>
 
@@ -65,6 +65,79 @@
   </div>
 
   <input type="text" placeholder="hello" class="bg-gray-100 text-gray-800 focus:bg-gray-200 py-2 px-4 border focus:border-gray-500 outline-none">
+
+  <div>
+    <div class="inline-block">Div inline 1</div>
+    <div class="inline-block">This div contains paragraph hidden <p class="hidden">I am hidden</p> </div>
+    <div class="inline-block">Div inline 1</div>
+  </div>
+
+  <hr>
+
+  <h2 class="text-xl">Overflow</h2>
+  <div class="h-16 overflow-y-auto bg-purple-300">
+    <p>cause overflow</p>
+    <p>cause overflow</p>
+    <p>cause overflow</p>
+    <p>cause overflow</p>
+    <p>cause overflow</p>
+    <p>cause overflow</p>
+    <p>cause overflow</p>
+    <p>cause overflow</p>
+    <p>cause overflow</p>
+    <p>cause overflow</p>
+    <p>cause overflow</p>
+    <p>cause overflow</p>
+    <p>cause overflow</p>
+    <p>cause overflow</p>
+  </div>
+
+
+  <h3>Overflow</h3>
+  <div class="relative bg-gray-300 w-full h-40">
+    <div class="w-16 h-16 rounded bg-purple-500 absolute top-0 left-2/4"></div>
+  </div>
+
+  <div class="flex">
+    <span class="h-10 w-full bg-teal-400 visible">i am not hidden 1</span>
+    <span class="h-10 w-full bg-teal-400 hover:invisible">i am not hidden 2</span>
+    <span class="h-10 w-full bg-teal-400">i am not hidden 3</span>
+  </div>
+
+  <h1>Container - zindex</h1>
+  <div class="container w-full relative h-20">
+    <div class="absolute bg-sky-300 w-10 h-10 z-30 p-0 ">hi</div>
+    <div class="absolute bg-sky-500 w-10 h-10 z-20 m-2 ">hi</div>
+    <div class="absolute bg-sky-700 w-10 h-10 z-10 m-4 ">hi</div>
+  </div>
+
+  <h1>flex</h1>
+  <div class="flex bg-pink-300 w-full">
+    <div class="bg-pink-600 flex-1 m-3 text-white px-4 py-2">item first</div>
+    <div class="bg-pink-600 flex-1 m-3 text-white px-4 py-2">item two</div>
+    <div class="bg-pink-600 flex-1 m-3 text-white px-4 py-2">item three</div>
+  </div>
+
+  <hr>
+<h1>Flex col</h1>
+  <div class="flex flex-col bg-blue-200 w-full">
+    <div class="bg-blue-400 flex-1 m-1 text-white px-4 py-2">item first</div>
+    <div class="bg-blue-400 flex-1 m-1 text-white px-4 py-2">item two</div>
+    <div class="bg-blue-400 flex-1 m-1 text-white px-4 py-2">item three</div>
+  </div>
+
+  <h1>Flex wrap</h1>
+  <div class="flex flex-wrap bg-blue-200 w-full">
+    <div class="bg-blue-400 text-white px-4 py-2 w-40 order-last">item 1</div>
+    <div class="bg-blue-400 text-white px-4 py-2 w-40 order-1">item 2</div>
+    <div class="bg-blue-400 text-white px-4 py-2 w-40 order-2">item 3</div>
+    <div class="bg-blue-400 text-white px-4 py-2 w-40 order-7">item 4</div>
+    <div class="bg-blue-400 text-white px-4 py-2 w-40 order-6">item 5</div>
+    <div class="bg-blue-400 text-white px-4 py-2 w-40 order-5">item 6</div>
+    <div class="bg-blue-400 text-white px-4 py-2 w-40 order-4">item 7</div>
+    <div class="bg-blue-400 text-white px-4 py-2 w-40 order-3">item 8</div>
+    <div class="bg-blue-400 text-white px-4 py-2 w-40 sm:order-first sm:bg-blue-600">item 9</div>
+  </div>
 
 
 </body>
