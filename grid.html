@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style type="text/tailwindcss">
+    @layer components {
+      .btn {
+        @apply font-bold py-2 px-2 rounded;
+      }
+      .btn-blue {
+        @apply bg-blue-400 text-white;
+      }
+      .btn-blue:hover {
+        @apply hover:bg-blue-600;
+      }
+
+      .btn-green {
+        @apply bg-green-400 text-white;
+      }
+      .btn-green:hover {
+        @apply hover:bg-green-600;
+      }
+
+    }
+    @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+      }
+    }
+  </style>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+
+  <div class="grid grid-cols-3 gap-1">
+    <div class="bg-teal-300 p-2 ">item 1</div>
+    <div class="bg-teal-300 p-2 ">item 2</div>
+    <div class="bg-teal-300 p-2 ">item 3</div>
+    <div class="bg-teal-300 p-2 ">item 4</div>
+    <div class="bg-teal-300 p-2 ">item 5</div>
+    <div class="bg-teal-300 p-2 ">item 6</div>
+    <div class="bg-teal-300 p-2 ">item 7</div>
+    <div class="bg-teal-300 p-2 ">item 8</div>
+  </div>
+
+  <header class="grid grid-cols-8 bg-red-600">
+    <div class="col-span-1 bg-orange-300"></div>
+
+    <div class="col-span-7 bg-green-300 flex">
+      <a href="#" class="block p-2" href="#">Home</a>
+      <a href="#" class="block p-2" href="#">Contact</a>
+      <a href="#" class="block p-2" href="#">Releases</a>
+      <a href="#" class="block p-2" href="#">Support</a>
+    </div>
+  </header>
+
+  <div class="grid grid-cols-8">
+    <aside class="col-span-1 bg-blue-200 ">
+      <ul class="w-full inline">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+      </ul>
+    </aside>
+
+    <main class="col-span-6 px-2 bg-gray-200 mx-2">
+      <h1>My title</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro laborum, pariatur tempora excepturi id fugit in iusto. Maiores cupiditate ipsa modi consequuntur iure, quia ex vero sequi, at eligendi veritatis?</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro laborum, pariatur tempora excepturi id fugit in iusto. Maiores cupiditate ipsa modi consequuntur iure, quia ex vero sequi, at eligendi veritatis?</p>
+    </main>
+
+    <aside class="col-span-1 bg-blue-200 p-2">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptate quia odit optio, accusamus sunt saepe labore a, quas temporibus minus natus ipsam obcaecati nemo dolorem facere maxime nesciunt sapiente.</p>
+    </aside>
+
+  </div>
+
+</body>
+</html>
