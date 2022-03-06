@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="flex flex-col">
+    <h1>Appearance</h1>
+    <select name="" id="" class="appearance-none cursor-pointer">
+      <option value="">Teste</option>
+      <option value="">Teste2</option>
+    </select>
+    <!-- disable: pointe-events-none -->
+
+    <hr class="border border-b-2" />
+    <h1>Outline</h1>
+
+    <label for="">
+      input
+      <input type="text" />
+    </label>
+
+    <label for="">
+      input
+      <input type="text" class="outline-none" />
+    </label>
+
+    <h1>Select None</h1>
+    <div>
+      <hr class="border border-b-2" />
+      <p class="select-none">Tente me selecionar</p>
+      <p>Me selecione!</p>
+    </div>
+
+    <hr class="border border-b-2" />
+    <h1>Ring</h1>
+
+    <div class="flex h-20 items-center">
+      <button class="bg-orange-300">Opa, eae</button>
+      <button class="bg-orange-300 ring-2 ring-rose-300 ring-inset">Opa, uso o ring interno</button>
+      <button class="bg-orange-300 border-2 border-rose-300">opa, uso border</button>
+      <button class="bg-orange-300 ring-2 ring-rose-300">Opa, uso o ring externo</button>
+    </div>
+
+    <div class="bg-red-200">
+      <label for="check">Selecione um item</label>
+      <input
+        type="checkbox"
+        name="check"
+        id="check"
+        class="form-check-input appearance-none h-4 w-4 border border-gray-200 rounded-sm checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 cursor-pointer bg-blue-300" />
+    </div>
+
+    <div class="mt-20"></div>
+    <hr />
+    <h1>Oculta o problema</h1>
+    <h1>Elipsis</h1>
+    <div class="max-w-sm mx-auto">
+      <p class="overflow-hidden text-ellipsis p-10 bg-red-600 text-pink-200 rounded-sm">
+        asasasasasa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+      </p>
+    </div>
+
+    <h1>Clip</h1>
+    <div class="max-w-sm mx-auto">
+      <p class="overflow-hidden text-clip p-10 bg-red-600 text-pink-200 rounded-sm">
+        asasasasasa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+      </p>
+    </div>
+
+    <h1>Resolve o problema</h1>
+    <h1>break-normal</h1>
+    <div class="max-w-sm mx-auto">
+      <p class="break-normal p-10 bg-red-600 text-pink-200 rounded-sm">
+        asasasasasa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+      </p>
+    </div>
+
+    <h1>break-words</h1>
+    <div class="max-w-sm mx-auto">
+      <p class="break-words p-10 bg-red-600 text-pink-200 rounded-sm">
+        asasasasasa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+      </p>
+    </div>
+
+    <h1>break-all</h1>
+    <div class="max-w-sm mx-auto">
+      <p class="break-all p-10 bg-red-600 text-pink-200 rounded-sm">
+        asasasasasa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+      </p>
+    </div>
+  </body>
+</html>

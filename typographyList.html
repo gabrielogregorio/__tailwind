@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              arial: 'arial',
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="grid grid-cols-1 gap-10 bg-gray-900 text-white">
+    <div>
+      <h1>font's</h1>
+      <div class="border border-rose-100">
+        <h1 class="font-sans">font sans</h1>
+        <h1 class="font-serif">font serif</h1>
+        <h1 class="font-mono">font mono</h1>
+        <h1 class="font-arial">font arial</h1>
+      </div>
+    </div>
+
+    <div>
+      <h1>text sizes</h1>
+      <div>
+        <h1 class="text-xs">text = xs</h1>
+        <h1 class="text-lg">text = lg</h1>
+        <h1 class="text-2xl">text = 2xl</h1>
+        <h1 class="text-6xl">text = 6xl</h1>
+      </div>
+    </div>
+
+    <div>
+      <h1>text styles</h1>
+      <div>
+        <h1 class="text-xl italic">text = xs</h1>
+      </div>
+    </div>
+
+    <div>
+      <h1>text weight</h1>
+      <div>
+        <h1 class="text-xl font-thin">font = black</h1>
+        <h1 class="text-xl font-bold">font = bold</h1>
+      </div>
+    </div>
+
+    <div>
+      <h1>letter spacing</h1>
+      <div>
+        <h1 class="text-xl tracking-tighter">Spacing in letters</h1>
+        <h1 class="text-xl">Spacing in letters</h1>
+        <h1 class="text-xl tracking-wider">Spacing in letters</h1>
+        <h1 class="text-xl tracking-widest">Spacing in letters</h1>
+      </div>
+    </div>
+    <div>
+      <h1>Leading - line-height</h1>
+      <p>In according with font-size (auto)</p>
+      <div class="grid grid-cols-3 gap-2">
+        <p class="bg-blue-900 my-2 leading-tight">
+          Lorem ipsum dolor sit, amet consectetur adipisicing
+        </p>
+        <p class="bg-blue-900 my-2">Lorem ipsum dolor sit, amet consectetur adipisicing</p>
+        <p class="bg-blue-900 my-2 leading-loose">
+          Lorem ipsum dolor sit, amet consectetur adipisicing
+        </p>
+      </div>
+    </div>
+
+    <div>
+      <h1>Lists</h1>
+      <ul class="list-disc m-10">
+        <li>Carro</li>
+        <li>Avião</li>
+        <li>Barco</li>
+        <li>Cargueiro</li>
+      </ul>
+    </div>
+
+    <div>
+      <h1>Lists</h1>
+      <ul class="list-decimal m-10">
+        <li>Carro</li>
+        <li>Avião</li>
+        <li>Barco</li>
+        <li>Cargueiro</li>
+      </ul>
+    </div>
+
+    <div>
+      <h1>Lists - normal list (outside)</h1>
+      <ul class="m-10 list-decimal bg-purple-900">
+        <li>Carro</li>
+        <li>Avião</li>
+        <li>Barco</li>
+        <li>Cargueiro</li>
+      </ul>
+    </div>
+
+    <div>
+      <h1>Lists - list-inside</h1>
+      <ul class="m-10 list-decimal bg-purple-900 list-inside">
+        <li>Carro</li>
+        <li>Avião</li>
+        <li>Barco</li>
+        <li>Cargueiro</li>
+      </ul>
+    </div>
+
+    <div>
+      <h1>Placeholder</h1>
+      <input
+        type="text"
+        placeholder="My Placeholder"
+        class="placeholder-blue-400 placeholder-opacity-50" />
+      <input
+        type="text"
+        placeholder="My Placeholder"
+        class="placeholder-blue-400 placeholder-opacity-100" />
+    </div>
+
+    <div>
+      <h1>Alinhamento</h1>
+      <p class="bg-purple-300 text-xl text-left">Text to left</p>
+      <p class="bg-purple-400 text-xl text-center">Text to center</p>
+      <p class="bg-purple-500 text-xl text-right">Text to right</p>
+    </div>
+
+    <div>
+      <p class="bg-red-400 text-red-800 text-bold border border-red-600 rounded-sm p-4">
+        Erro ao fazer login
+      </p>
+    </div>
+
+    <hr />
+
+    <h1>Decorations and transform</h1>
+
+    <div>
+      <p class="text-2xl underline">Text with underline</p>
+      <p class="text-2xl line-through">Text with line-through</p>
+      <p class="text-2xl lowercase">text in lowerCase</p>
+      <p class="text-2xl uppercase">text in upperCase</p>
+    </div>
+  </body>
+</html>

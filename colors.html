@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style type="text/tailwindcss">
+    @layer components {
+      .btn {
+        @apply font-bold py-2 px-2 rounded;
+      }
+      .btn-blue {
+        @apply bg-blue-400 text-white;
+      }
+      .btn-blue:hover {
+        @apply hover:bg-blue-600;
+      }
+
+      .btn-green {
+        @apply bg-green-400 text-white;
+      }
+      .btn-green:hover {
+        @apply hover:bg-green-600;
+      }
+
+    }
+    @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+      }
+    }
+  </style>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="grid grid-cols-10" id="body"></div>
+
+<script>
+  const colors = ['Slate', 'Gray', 'Zinc', 'Neutral', 'Stone', 'Red', 'Orange', 'Amber', 'Yellow', 'Lime', 'Green', 'Emerald', 'Teal', 'Cyan', 'Sky', 'Blue', 'Indigo', 'Violet', 'Purple', 'Fuchsia', 'Pink','Rose']
+  const variations = [50, 100, 200, 300, 400, 500, 600, 700, 800, 900]
+  const body = document.getElementById('body');
+
+  colors.forEach((color) => {
+    variations.forEach((variation) => {
+      const newItemForArray = document.createElement('div')
+      newItemForArray.setAttribute('class', 'bg-' + color.toLowerCase() + '-' + variation.toString() + ' h-10')
+      body.appendChild(newItemForArray)
+
+    })
+  })
+</script>
+</body>
+</html>
+
+
+
