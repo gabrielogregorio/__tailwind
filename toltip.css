@@ -1,0 +1,7 @@
+.toltip > div {
+  display: none;
+}
+
+.toltip:hover > div {
+  display: block;
+}
